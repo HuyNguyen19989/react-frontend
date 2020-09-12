@@ -11,7 +11,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  NavbarText,
+  Col
 } from 'reactstrap';
 
 const Example = (props) => {
@@ -21,6 +22,7 @@ const Example = (props) => {
 
   return (
     <div>
+      <Col lg='12' className='test'>
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -53,6 +55,7 @@ const Example = (props) => {
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
+      </Col>
     </div>
   );
 }
