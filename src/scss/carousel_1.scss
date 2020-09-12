@@ -1,0 +1,22 @@
+$compo-color: #8f8f8f;
+$back-color:     #ffffff;
+#img_sec {
+    width: 200px !important;
+    height: 300px !important;   
+}
+.sec-1 {
+    height: 550px !important;
+}
+.center-item-hor {
+    text-align: center;
+
+}
+.center-item-parent {
+    position: relative;
+}
+.back-color {
+    background-image: linear-gradient($back-color, $compo-color);
+}
+.center-item-ver {
+    transform: translateY(20%)
+}
