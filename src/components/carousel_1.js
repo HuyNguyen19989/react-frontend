@@ -73,16 +73,16 @@ const Crl = (props) => {
   }
 
   return (
-    <div style={myStyle} className='sec-1'>
+    <div style={myStyle} className='sec-1-crl'>
       <h2>BTV ĐỀ CỬ</h2>
     <Carousel
       activeIndex={activeIndex}
       next={next}
       previous={previous}
-      className='crl-item-height'
+      
     >
       
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} className='crl-item-height' />
+      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}    />
       {slides}
       
     </Carousel>
