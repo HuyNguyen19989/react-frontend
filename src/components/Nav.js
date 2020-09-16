@@ -29,7 +29,7 @@ const Example = (props) => {
   return (
     <div style={myStyle}>
       <Navbar light expand="md" id='c-nav'>
-        <NavbarBrand href="/">Swallows</NavbarBrand>
+        <NavbarBrand href="/"><h1>Swallows</h1></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

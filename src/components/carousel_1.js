@@ -10,6 +10,7 @@ import op from '../image/op.png';
 import boruto from '../image/boruto.png';
 import heroaca from '../image/heroaca.png';
 
+
 const items = [
   {
     src: op,
@@ -58,7 +59,7 @@ const Crl = (props) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
-        className='sec-1 center-item-hor back-color'
+        className='center-item-hor back-color crl-item-height'
       >
         
         <img id='img_sec' src={item.src} alt={item.altText} className='center-item-ver' />
@@ -72,16 +73,16 @@ const Crl = (props) => {
   }
 
   return (
-    <div style={myStyle}>
-      <h2>BTV</h2>
+    <div style={myStyle} className='sec-1'>
+      <h2>BTV ĐỀ CỬ</h2>
     <Carousel
       activeIndex={activeIndex}
       next={next}
       previous={previous}
-      className='sec-1'
+      className='crl-item-height'
     >
       
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} className='crl-item-height' />
       {slides}
       
     </Carousel>

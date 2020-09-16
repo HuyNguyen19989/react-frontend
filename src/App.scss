@@ -22,13 +22,9 @@ body {
     background-color: $compo-color !important;
 
 }
-#div-main {
-    background-color: $back-color;
+.div-main {
+    background-color: $back-color !important;
     width: 100%;
     height: 10000px !important;
 }
 
-.w {
-    width: 370 !important;
-    height: 550 !important;
-}
