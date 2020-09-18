@@ -12,27 +12,32 @@ import {
   DropdownMenu,
   DropdownItem,
   NavbarText,
-  Col
 } from 'reactstrap';
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
+  const myStyle = {
+    width: "100%", 
+    margin: "0px",
+  }
+
   return (
-    <div>
-      <Col lg='12' className='test'>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+    <div style={myStyle}>
+      <Navbar light expand="md" id='c-nav'>
+        <NavbarBrand href="/"><h1>Swallows</h1></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/components/">Danh Mục</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="https://github.com/reactstrap/reactstrap">Thể Loại</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -52,10 +57,15 @@ const Example = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText>
+           <form>
+             <input placeholder='Search' className='bder-0'></input>
+             <button type='submit' className='bder-0'><FontAwesomeIcon icon={faSearch} ></FontAwesomeIcon></button>
+           </form>
+     
+          </NavbarText>
         </Collapse>
       </Navbar>
-      </Col>
     </div>
   );
 }

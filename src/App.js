@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
-import {Container} from 'reactstrap';
+import './App.scss';
 import LandingPage from './pages/LandingPage'
+
+
 
 function App() {
   return (
-    <LandingPage>
+    <div className='p-0 div-main' >
+      <LandingPage>
 
       </LandingPage>
+    </div>
   )
 }
 

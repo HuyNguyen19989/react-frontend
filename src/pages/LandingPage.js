@@ -1,17 +1,35 @@
 import React from 'react';
-import {Container, Row, Col} from 'reactstrap';
+import {Row, Col, Container} from 'reactstrap';
 import Example from '../components/Nav';
-import ExampleMain from '../components/Main';
+import Sec from '../components/sec_one';
+import '../scss/landingpage.scss'
+
 
 class LandingPage extends React.Component {
     render() {
       return (
-       <Container className="tat-margin-cho-tao">
-           <Example>
-           </Example>
-       </Container>
+       <div   >
+        <Container>
+          <Row>
+               <Col xl="12">
+                   <Example>
+               
+                   </Example>
+               </Col>  
+          </Row>   
+        </Container>
+        <main className="au-main">
+          <section >
+            <div id='back-color-1'>
+            <Sec>
+            </Sec>
+            </div>
+          </section>
+        </main>
+       </div>
       );
     }
   }
 
 export default LandingPage;
+
