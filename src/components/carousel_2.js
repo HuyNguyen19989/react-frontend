@@ -32,7 +32,7 @@ const items = [
   }
 ];
 
-const Crl = () => {
+const Crltwo = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -74,7 +74,7 @@ const Crl = () => {
 
   return (
     <div style={myStyle} className='sec-1-crl'>
-      <h2>BTV ĐỀ CỬ</h2>
+        <h3>Truyện trả phí</h3>
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -90,4 +90,4 @@ const Crl = () => {
   );
 }
 
-export default Crl;
+export default Crltwo;

@@ -1,5 +1,5 @@
 .w {
-    padding: 10 !important;
+    padding: 12px;
     display: flex;
 } 
 .bder { 
@@ -28,14 +28,12 @@
     border-bottom: solid;
     border-width: thin;
     border-color: #b1afaf;
-    padding-bottom: 10px;
+    padding: 5px 0 5px 0;
 }
 .list-group {
     padding: 0px !important;
 }
-.left-2 {
-    float: left !important;
-}
+
 .left-3 {
     float: right !important;
 }
@@ -44,10 +42,46 @@
 }
 .w-list-item {
     width: 100% !important;
+    padding-top: 5px;
 }
 .display-list-item {
     display: flex;
 }
 p {
     margin: 0 !important;
+}
+.back-color-sec {
+    background-color: white;
+}
+.pad-12 {
+    padding-top: 12px;
+}
+.hinh-nho-2 {
+    height: 45px;
+    width: 30px;
+}
+.w-list-item-2 {
+    width: 100% !important;
+}
+.con-sec-2 {
+    margin-top: 30px;
+}
+.hinh-nho-3 {
+    height: 40px;
+    width: 30px;
+}
+.div-35 {
+    width: 35%;
+}
+.div-30 {
+    width: 30%;
+}
+.div-20 {
+    width: 20%;
+}
+.bder-bot { 
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #b1afaf;
+    padding-bottom: 10px;
 }

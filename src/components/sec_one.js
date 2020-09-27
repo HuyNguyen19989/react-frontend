@@ -8,7 +8,7 @@ import { faStar, faRainbow } from '@fortawesome/free-solid-svg-icons'
 const Sec  = (props) => {
   return (
     <Container>
-      <Row>
+      <Row  className='back-color-sec'>
         <Col md='4' sm='6' xs='12' className='bder'>
           <Crl>
 
@@ -54,7 +54,7 @@ const Sec  = (props) => {
           </Col>
           </Row>
         </Col>
-        <Col md='4' sm='12' xs='12' className=' bder'>
+        <Col md='4' sm='12' xs='12' className='bder pad-12'>
           <h2>Người Đọc Đề Cử<br/></h2>
           <ul className='list-group'>
             <li className='list-item'>
@@ -63,17 +63,17 @@ const Sec  = (props) => {
                 <FontAwesomeIcon icon={faStar} className='wandh'>1</FontAwesomeIcon>
               </div>
               <div className='sameline'>
-                <a>Con Cu bị Méo</a>
+                <a>Con  heo</a>
               <div>
                 Lượt  view: 00000
               </div>
                 <p>
-                  Thể Loại: cu bự <br/>
+                  Thể Loại: chung <br/>
                   Tác giả:
                 </p>
               </div>
               <div className='sameline left'>
-                <img src={require('../image/cuto.png')} className='hinhnho' />
+                <img src={require('../image/op.png')} className='hinhnho' />
               </div>
             </Row>
             </li>
@@ -120,7 +120,8 @@ const Sec  = (props) => {
                   <p className='left-3'>1111</p>
                 </div>
               </div>           
-            </li><li className='list-item'>
+            </li>
+            <li className='list-item'>
               <div className='display-list-item'>
                 <div >
                   <FontAwesomeIcon icon={faStar} className='wandh'>1</FontAwesomeIcon>
@@ -130,7 +131,8 @@ const Sec  = (props) => {
                   <p className='left-3'>1111</p>
                 </div>
               </div>           
-            </li><li className='list-item'>
+            </li>
+            <li className='list-item'>
               <div className='display-list-item'>
                 <div >
                   <FontAwesomeIcon icon={faStar} className='wandh'>1</FontAwesomeIcon>
@@ -140,7 +142,8 @@ const Sec  = (props) => {
                   <p className='left-3'>1111</p>
                 </div>
               </div>           
-            </li><li className='list-item'>
+            </li>
+            <li className='list-item'>
               <div className='display-list-item'>
                 <div >
                   <FontAwesomeIcon icon={faStar} className='wandh'>1</FontAwesomeIcon>
@@ -150,7 +153,8 @@ const Sec  = (props) => {
                   <p className='left-3'>1111</p>
                 </div>
               </div>           
-            </li><li className='list-item'>
+            </li>
+            <li className='list-item'>
               <div className='display-list-item'>
                 <div >
                   <FontAwesomeIcon icon={faStar} className='wandh'>1</FontAwesomeIcon>

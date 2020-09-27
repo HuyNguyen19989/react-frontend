@@ -3,6 +3,7 @@ import {Row, Col, Container} from 'reactstrap';
 import Example from '../components/Nav';
 import Sec from '../components/sec_one';
 import '../scss/landingpage.scss'
+import Sectwo from '../components/sec_two';
 
 
 class LandingPage extends React.Component {
@@ -20,10 +21,14 @@ class LandingPage extends React.Component {
         </Container>
         <main className="au-main">
           <section >
-            <div id='back-color-1'>
             <Sec>
             </Sec>
-            </div>
+          </section>
+          <section>
+            <Sectwo>
+              
+            </Sectwo>
+
           </section>
         </main>
        </div>
