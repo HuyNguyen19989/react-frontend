@@ -1,3 +1,47 @@
 .au-main {
     margin-top: 250px !important;
 }
+.footer-header {
+    position: relative;
+    margin-bottom: 30px;
+}
+.footer-header::after {
+    position: absolute;
+    content: ' ';
+    height: 2px;
+    width: 30px;
+    background-color: #6b9876;
+    bottom: -12px;
+    left: 0;
+}
+.footer {
+    background-color: white;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.footer-1 {
+    background-color: white;
+}
+.footer-content {
+    font-size: 14px;
+    line-height: 22px;
+}
+.footer-block {
+    padding: 0px 15px;
+}
+.block-list-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 24px;
+    width: 24px;
+    margin: auto;
+}
+.footer-icon-content {
+    line-height: 24px;
+    padding: 6px 0 6px 34px;
+    position: relative;
+    display: block;
+}
