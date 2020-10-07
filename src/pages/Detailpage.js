@@ -1,39 +1,30 @@
 import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import Example from '../components/Nav';
-import Sec from '../components/sec_one';
-import '../scss/landingpage.scss'
-import Sectwo from '../components/sec_two';
+import Secdetail from '../components/sec_detail';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamationTriangle, faUpload, faEnvelope, faPhone  } from '@fortawesome/free-solid-svg-icons'
 
 
-class LandingPage extends React.Component {
+class Detailpage extends React.Component {
     render() {
       return (
-       <div   >
-        <Container>
-          <Row>
-               <Col xl="12">
-                   <Example>
+          <div>
+              <Container>
+                <Row>
+                  <Col xl="12">
+                    <Example>
                
-                   </Example>
-               </Col>  
-          </Row>   
-        </Container>
-        <main className="au-main">
-          <section >
-            <Sec>
-            </Sec>
-          </section>
-          <section>
-            <Sectwo>
-              
-            </Sectwo>
+                    </Example>
+                  </Col>  
+                </Row>   
+              </Container> 
+              <section className='au-main'>
+                  <Secdetail>
 
-          </section>
-        </main>
-        <section className='footer'>
+                  </Secdetail>               
+              </section>
+              <section className='footer'>
           <Container>
             <Row className='footer-1'>
               <Col sm='4' className='fooer-block'>
@@ -96,10 +87,8 @@ class LandingPage extends React.Component {
             </Row>
           </Container>
         </section>
-       </div>
-      );
+          </div>
+      )
     }
-  }
-
-export default LandingPage;
-
+}
+export default Detailpage;

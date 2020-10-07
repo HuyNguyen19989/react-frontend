@@ -59,7 +59,8 @@ const Crl = () => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
-        className='center-item-hor back-color crl-item-height'
+        className='center-item-hor back-color crl-item-height shadow'
+
       >
         
         <img id='img_sec' src={item.src} alt={item.altText} className='center-item-ver' />

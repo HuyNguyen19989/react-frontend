@@ -1,7 +1,7 @@
 import React from 'react';
 import Crltwo from './carousel_2'
 import { Container, Row, Col } from 'reactstrap';
-import '../scss/sec_one.scss'
+import '../scss/sec_main.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faRainbow } from '@fortawesome/free-solid-svg-icons'
 
