@@ -15,6 +15,16 @@ import {
 } from 'reactstrap';
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import LandingPage from '../pages/LandingPage';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +39,9 @@ const Example = (props) => {
   return (
     <div style={myStyle}>
       <Navbar light expand="md" id='c-nav'>
-        <NavbarBrand href="/"><h1>Swallows</h1></NavbarBrand>
+        <NavbarBrand href="/">
+        <Link to="/"><h1>Swallows</h1></Link>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -66,7 +78,9 @@ const Example = (props) => {
           </NavbarText>
         </Collapse>
       </Navbar>
+      
     </div>
+   
   );
 }
 

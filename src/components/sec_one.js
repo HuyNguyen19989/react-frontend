@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 import '../scss/sec_main.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faRainbow } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Sec  = (props) => {
   return (
@@ -83,7 +84,9 @@ const Sec  = (props) => {
                   <FontAwesomeIcon icon={faStar} className='wandh'>1</FontAwesomeIcon>
                 </div>
                 <div className='w-list-item sameline'>
-                  <p className='clear-1'><a>HAHAHAH</a></p>
+                  <p className='clear-1'>
+                    <Link to='/detail'><a>HAHAHAH</a></Link>
+                  </p>
                   <p className='left-3'>1111</p>
                 </div>
               </div>           

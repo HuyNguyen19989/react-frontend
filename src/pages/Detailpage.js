@@ -9,7 +9,8 @@ import { faExclamationTriangle, faUpload, faEnvelope, faPhone  } from '@fortawes
 class Detailpage extends React.Component {
     render() {
       return (
-          <div>
+          <div> 
+            <div>
               <Container>
                 <Row>
                   <Col xl="12">
@@ -18,7 +19,8 @@ class Detailpage extends React.Component {
                     </Example>
                   </Col>  
                 </Row>   
-              </Container> 
+              </Container>
+      </div>
               <section className='au-main'>
                   <Secdetail>
 

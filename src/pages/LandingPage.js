@@ -12,15 +12,17 @@ class LandingPage extends React.Component {
     render() {
       return (
        <div   >
-        <Container>
-          <Row>
-               <Col xl="12">
-                   <Example>
+      <div>
+              <Container>
+                <Row>
+                  <Col xl="12">
+                    <Example>
                
-                   </Example>
-               </Col>  
-          </Row>   
-        </Container>
+                    </Example>
+                  </Col>  
+                </Row>   
+              </Container>
+      </div>
         <main className="au-main">
           <section >
             <Sec>
