@@ -11,6 +11,7 @@ import Crltwo from './carousel_2';
 
 
 const Secdetail  = (props) => {
+  
   return (
     <Container>
       <Col xl='12'className='back-color-sec-detail'>
