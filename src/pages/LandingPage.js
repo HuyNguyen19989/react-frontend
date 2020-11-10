@@ -4,8 +4,7 @@ import Example from '../components/Nav';
 import Sec from '../components/sec_one';
 import '../scss/landingpage.scss'
 import Sectwo from '../components/sec_two';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExclamationTriangle, faUpload, faEnvelope, faPhone  } from '@fortawesome/free-solid-svg-icons'
+
 import Footer from '../components/Footer';
 
 

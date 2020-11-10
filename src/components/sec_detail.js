@@ -69,7 +69,7 @@ const Secdetail  = (props) => {
                 </div>             
               </div>
               <div className='sameline-detail'>
-                <Button color="primary" className='m-right button-size'>Đọc Tiếp</Button>
+                <Button color="primary" className='m-right button-size' onClick={props.handleClick}>Đọc Tiếp</Button>
                 <Button color="warning" className='m-right button-size'>Bookmarks</Button>{' '}
               </div>
             </div>

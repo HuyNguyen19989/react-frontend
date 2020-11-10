@@ -2,13 +2,26 @@ import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import Example from '../components/Nav';
 import Secdetail from '../components/sec_detail';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExclamationTriangle, faUpload, faEnvelope, faPhone  } from '@fortawesome/free-solid-svg-icons'
+
 import Footer from '../components/Footer';
+import Contentpage from './Contentpage';
 
 
 class Detailpage extends React.Component {
-    render() {
+  constructor(props){
+    super(props);
+    this.state = {
+           toggle: false
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+  handleClick() {
+    this.setState({
+      toggle: !this.state.toggle
+    })
+
+  }
+  render() {
       return (
           <div> 
             <div>
@@ -23,11 +36,12 @@ class Detailpage extends React.Component {
               </Container>
       </div>
               <section className='au-main'>
-                  <Secdetail>
+                  <Secdetail handleClick={this.handleClick}>
 
                   </Secdetail>               
               </section>
               <Footer/>
+              <Contentpage toggle={this.state.toggle}/>
           </div>
       )
     }

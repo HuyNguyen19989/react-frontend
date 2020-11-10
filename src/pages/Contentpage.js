@@ -9,25 +9,18 @@ import Footer from '../components/Footer';
 class Contentpage extends React.Component {
     render() {
       return (
-          <div> 
-            <div>
-              <Container>
-                <Row>
-                  <Col xl="12">
-                    <Example>
-               
-                    </Example>
-                  </Col>  
-                </Row>   
-              </Container>
-      </div>
-              <section className='au-main'>
-                  <Secdetail>
+         <div>
+           {this.props.toggle === true?
+           <div>
+             <Container>
+               dc roisssssssssssssssssssssssssssssssssssssssssss
+             </Container>
+           </div>
 
-                  </Secdetail>               
-              </section>
-              <Footer/>
-          </div>
+           : null
+
+           }
+         </div>
       )
     }
 }

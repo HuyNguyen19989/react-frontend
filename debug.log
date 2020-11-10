@@ -4,3 +4,4 @@
 [0919/170545.315:ERROR:exception_snapshot_win.cc(99)] thread ID 5796 not found in process
 [0919/170545.315:ERROR:exception_snapshot_win.cc(99)] thread ID 2996 not found in process
 [0919/170545.315:ERROR:exception_snapshot_win.cc(99)] thread ID 17984 not found in process
+[1107/174433.523:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
