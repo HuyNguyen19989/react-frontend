@@ -4,7 +4,7 @@ import Example from '../components/Nav';
 import Secdetail from '../components/sec_detail';
 
 import Footer from '../components/Footer';
-import Contentpage from './Contentpage';
+import Au from './Au';
 
 
 class Detailpage extends React.Component {
@@ -23,7 +23,7 @@ class Detailpage extends React.Component {
   }
   render() {
       return (
-          <div> 
+          <div className="re"> 
             <div>
               <Container>
                 <Row>
@@ -34,14 +34,17 @@ class Detailpage extends React.Component {
                   </Col>  
                 </Row>   
               </Container>
-      </div>
+            </div>
               <section className='au-main'>
                   <Secdetail handleClick={this.handleClick}>
 
                   </Secdetail>               
               </section>
               <Footer/>
-              <Contentpage toggle={this.state.toggle}/>
+              <div className= "fix">
+              <Au toggle={this.state.toggle} />
+              </div>
+              
           </div>
       )
     }

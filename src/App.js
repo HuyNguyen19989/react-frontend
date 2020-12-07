@@ -12,6 +12,9 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import Loginpage from './pages/Loginpage';
+import AuthGuard from './pages/Authguard';
+
 
 
 function App() {
@@ -21,7 +24,12 @@ function App() {
            <BrowserRouter>
            <Switch>              
               <Route exact path="/" component={LandingPage} />
-              <Route exact path="/detail" component={Detailpage} />             
+              <Route exact path="/detail">
+                <AuthGuard exact path="/detail">
+                  <Detailpage/>
+                </AuthGuard>
+              </Route>
+              <Route exact path="/login" component={Loginpage} />                         
             </Switch>
             </BrowserRouter>
     </div>

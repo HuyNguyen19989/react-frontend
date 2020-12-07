@@ -39,16 +39,12 @@ box-shadow: 2px 3px 2px 0 rgba(0,0,0,.15)!important;
 
 
 
-* {
-    box-sizing: border-box;
-  }
-  
-  .App {
-    min-height: 100vh;
-    padding: 120px 0;
-    background-color: #f6f6f6;
+
+  .Audio {
+    background-color:   grey;
     color: #101010; 
     text-align: center;
+    
   }
   
   .Song-Thumbnail {
@@ -96,3 +92,16 @@ box-shadow: 2px 3px 2px 0 rgba(0,0,0,.15)!important;
       height: 22px;
     }
   }
+
+.fix {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.re {
+  position: relative;
+}
+.loginpage {
+  background-color: white;
+  padding: 20px;
+}

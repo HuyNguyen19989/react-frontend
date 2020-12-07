@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem,
   NavbarText,
+  Row,
 } from 'reactstrap';
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -49,7 +50,7 @@ const Example = (props) => {
               <NavLink href="/components/">Danh Mục</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Thể Loại</NavLink>
+              <NavLink href="/login">Thể Loại</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -70,10 +71,19 @@ const Example = (props) => {
             </UncontrolledDropdown>
           </Nav>
           <NavbarText>
-           <form>
+          
+           <Row>
+            <NavItem>
+              <NavLink href="/login">Login</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/login">Sign up</NavLink>
+            </NavItem>
+           <form>           
              <input placeholder='Search' className='bder-0'></input>
              <button type='submit' className='bder-0'><FontAwesomeIcon icon={faSearch} ></FontAwesomeIcon></button>
            </form>
+           </Row>
      
           </NavbarText>
         </Collapse>
